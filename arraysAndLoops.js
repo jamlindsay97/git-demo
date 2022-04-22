@@ -117,31 +117,40 @@ while (numList2 >= 0) {
 
 //Activity 4
 
-let movies = ["The Godfather", "Ghostbusters", "Hook", "Avengers"]
+let movies = ["The Godfather", "Ghostbusters", "Hook", "Avengers"];
 
 for (let i = 0; i < movies.length; i++) {
-    console.log(movies[i])
-    if (i==[2])
-        if (movies[i] == "Ghostbusters") {
-            console.log("Yay, it's Ghostbusters!")
-        }
-        else {
-            console.log("Boo! we want Ghostbusters!")
-        } 
+  console.log(movies[i]);
+  if (i == [2])
+    if (movies[i] == "Ghostbusters") {
+      console.log("Yay, it's Ghostbusters!");
+    } else {
+      console.log("Boo! we want Ghostbusters!");
+    }
 }
 
 //Activity 5
 
-for (let i = 0; i < 6; i++) {
-    let ranNum2 = 0;
-    let endLoop = Math.floor(Math.random() * 30);
-    for (let rn = 0; rn < endLoop; rn++) {
-      ranNum2++;
-    }
-        if (i % 7 == 0) {
-            console.log("This is divisible by 7");
-        }
-        
-    console.log(ranNum2);
+for (i = 0; i < 6; i++) {
+  let ranNum = Math.floor(Math.random() * 30);
+  if (ranNum % 7 == 0) {
+    console.log(`${ranNum} is divisible by 7.`);
+  } else {
+    console.log(`${ranNum} is not divisible by 7.`);
   }
+}
+
+//Activity 6
+
+const bobsFollowers = ["Joe", " Mike", "Louise", "Sam"];
+const hannahsFollowers = ["Liz", "Joe", "Sam", "Pete"];
+
+console.log(`Bob's followers: ${bobsFollowers}`);
+console.log(`Hannah's followers: ${hannahsFollowers}`);
+for (let bf of bobsFollowers)
+  for (let hf of hannahsFollowers)
+    if (bf.toLowerCase() == hf.toLowerCase())
+      console.log(`${bf} follows both Bob and Hannah.`);
+
+//Activity 7
 
